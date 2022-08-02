@@ -1,6 +1,7 @@
 import {
 	Avatar,
 	Box,
+	Button,
 	Container,
 	Title,
 } from '@mantine/core';
@@ -12,12 +13,9 @@ import Animation from './Animation';
 const AboutMe = () => {
 	const jozaPic =
 		'https://avatars.githubusercontent.com/u/51058620?s=400&u=24e9a67b6ad94629ae89079a88eece9ba1333898&v=4';
-	
-	
-	
 
 	return (
-		<Container className='max-w-2xl flex flex-col md:flex '>
+		<Container className='max-w-2xl flex-1 justify-center items-center box-border'>
 			<Box
 				sx={(theme) => ({
 					backgroundColor:
@@ -29,11 +27,11 @@ const AboutMe = () => {
 					padding: theme.spacing.lg,
 					borderRadius: theme.radius.lg,
 				})}
-				className='flex justify-center shrink-0 backdrop-blur-sm flex-nowrap'
+				className='flex justify-center backdrop-blur-sm flex-wrap'
 			>
 				Hello, I'm an frontend developer based in Michigan!
 			</Box>
-			<Box className='flex justify-center items-center'>
+			<Box className='flex  xs:flex-col justify-center items-center'>
 				<Box className='flex flex-auto flex-col'>
 					<Title order={2}>Joza Smith</Title>
 					<p>
@@ -54,70 +52,72 @@ const AboutMe = () => {
 				</Box>
 			</Box>
 			<Animation>
-			<div>
-				
 				<div>
-					<Title
-						order={3}
-						className='border-b-2 underline-offset-8 w-14 '
-					>
-						Work
-					</Title>
-					<p className='text-justify indent-0.5 whitespace-normal pt-3 w-5/6'>
-						I'm a frontend developer and artist based in
-						Grand Rapids with a passion for building and
-						creating digital stuff. I have a keen for all
-						things from launching product, planning and
-						designing all the way to solving real-life
-						problem with code. When I'm not online I love to
-						play games and make designs for my clothing
-						brand.
-					</p>
+					<div>
+						<Title
+							order={3}
+							className='border-b-2 underline-offset-8 w-14 '
+						>
+							Work
+						</Title>
+						<p className='text-justify indent-0.5  pt-3 w-5/6'>
+							I'm a frontend developer and artist based in
+							Grand Rapids with a passion for building and
+							creating digital stuff. I have a keen for all
+							things from launching product, planning and
+							designing all the way to solving real-life
+							problem with code. When I'm not online I love
+							to play games and make designs for my clothing
+							brand.
+						</p>
 					</div>
-				
-				<div>
-					<Title
-						order={3}
-						className='border-b-2 underline-offset-8 w-14'
-					>
-						Bio
-					</Title>
-					<span>1993 Born in Montreal, Quebec</span>
-				</div>
-				<div>
-					<span>
-						2021 Completed the Kenzie Academy Associate
-						Frontend Web Development Program
-					</span>
-				</div>
-				<div>
-					<span></span>
-				</div>
-			</div>
+					<div className='flex justify-center pb-5'>
+						<Button className='bg-gradient-to-r from-orange-300 to-red-400 border-none w-32 rounded-lg hover:from-red-400 hover:to-orange-300 '>
+							<a download href='/JosephSmithResume.pdf'>
+								Portfolio
+							</a>
+						</Button>
+					</div>
+					{/* background-image: linear-gradient(135deg, #FBD786 10%, #f7797d 100%); */}
+					<Box className='box-border border py-10'>
+						<Title
+							order={3}
+							className='border-b-2 underline-offset-8 w-8'
+						>
+							Bio
+						</Title>
+						<div>
+							<span className='flex flex-row gap-3 pt-3'>
+								<p className='font-bold'>1993</p> Born in
+								Montreal, Quebec
+							</span>
+							<span className='flex flex-row gap-3 justified'>
+								<p className='font-bold'>2021</p> Completed
+								the Kenzie Academy Associate Frontend Web
+								Development Program
+							</span>
+						</div>
+					</Box>
 
-			<div className='opacity-0'>
-				<div>
-					<Title
-						order={3}
-						className='border-b-2 underline-offset-8 w-14'
-					>
-						My fun
-					</Title>
-					<span>
-						Art, Building Keyboards, Gardening, Music
-					</span>
+					<div>
+						<span></span>
+					</div>
 				</div>
-				<div>
-					<Title
-						order={3}
-						className='border-b-2 underline-offset-8 w-14'
-					>
-						Online
-					</Title>
-					<span></span>
+
+				<div className=''>
+					<div>
+						<Title
+							order={3}
+							className='border-b-2 underline-offset-8 w-14'
+						>
+							My fun
+						</Title>
+						<span>
+							Art, Building Keyboards, Gardening, Music
+						</span>
+					</div>
 				</div>
-			</div>
-		</Animation>
+			</Animation>
 		</Container>
 	);
 };

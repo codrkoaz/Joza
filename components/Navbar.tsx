@@ -25,7 +25,7 @@ const Navbar = () => {
 					<Logo />
 				</div>
 
-				<Group className='hidden md:flex flex-1 items-center font-bold'>
+				<Group className=' xs:invisible sm:invisible md:invisible flex flex-1 items-center font-bold '>
 					<div>
 						<Link href='/Work'>Work</Link>
 					</div>
@@ -47,7 +47,7 @@ const Navbar = () => {
 					<div className=' border-2 rounded-md cursor-pointer  p-1'>
 						<Switcher />
 					</div>
-					<div className='float-right rounded-md text-blue-200 md:hidden cursor-pointer '>
+					<div className='float-right rounded-md text-blue-200 md:hidden cursor-pointer pr-3 '>
 						<Menu
 							trigger='hover'
 							className=' border-2 p-1 rounded-md '
