@@ -7,15 +7,21 @@ import {
 } from '@mantine/core';
 import React from 'react';
 import Image from 'next/image';
-import { Section } from '@mantine/core/lib/components/AppShell/HorizontalSection/Section/Section';
 import Animation from './Animation';
+import { IconChevronRight } from '@tabler/icons';
+import KBarCommand from './KBarCommand';
+
+const jozaPic =
+	'https://avatars.githubusercontent.com/u/51058620?s=400&u=24e9a67b6ad94629ae89079a88eece9ba1333898&v=4';
 
 const AboutMe = () => {
-	const jozaPic =
-		'https://avatars.githubusercontent.com/u/51058620?s=400&u=24e9a67b6ad94629ae89079a88eece9ba1333898&v=4';
 
 	return (
-		<Container className='max-w-2xl flex-1 justify-center items-center box-border'>
+		<Container className='max-w-xl h-screen flex-1 justify-center items-center box-border'>
+			<KBarCommand/>
+			<div className='h-96'>
+
+			</div>
 			<Box
 				sx={(theme) => ({
 					backgroundColor:
@@ -27,11 +33,11 @@ const AboutMe = () => {
 					padding: theme.spacing.lg,
 					borderRadius: theme.radius.lg,
 				})}
-				className='flex justify-center backdrop-blur-sm flex-wrap'
+				className='flex justify-center backdrop-blur-sm flex-wrap '
 			>
 				Hello, I'm an frontend developer based in Michigan!
 			</Box>
-			<Box className='flex  xs:flex-col justify-center items-center'>
+			<Box className='flex  xs:flex-col justify-center items-center pt-8'>
 				<Box className='flex flex-auto flex-col'>
 					<Title order={2}>Joza Smith</Title>
 					<p>
@@ -56,11 +62,11 @@ const AboutMe = () => {
 					<div>
 						<Title
 							order={3}
-							className='border-b-2 underline-offset-8 w-14 '
+							className='border-b-2 underline-offset-8 w-14 pt-3 '
 						>
 							Work
 						</Title>
-						<p className='text-justify indent-0.5  pt-3 w-5/6'>
+						<p className='text-justify indent-4  pt-3 w-5/6'>
 							I'm a frontend developer and artist based in
 							Grand Rapids with a passion for building and
 							creating digital stuff. I have a keen for all
@@ -71,15 +77,19 @@ const AboutMe = () => {
 							brand.
 						</p>
 					</div>
-					<div className='flex justify-center pb-5'>
-						<Button className='bg-gradient-to-r from-orange-300 to-red-400 border-none w-32 rounded-lg hover:from-red-400 hover:to-orange-300 '>
-							<a download href='/JosephSmithResume.pdf'>
-								Portfolio
+					<div className='flex justify-center pb-5 pr-5 gap-4'>
+						<Button className=' flex justify-center items-center bg-gradient-to-r from-orange-300 to-red-400 border-none w-32 rounded-lg hover:from-red-400 hover:to-orange-300'>
+							<a
+								download
+								href='/JosephSmithResume.pdf'
+								className='flex justify-center items-center gap-4 pl-3'
+							>
+								Resume
+								<IconChevronRight size={15} />
 							</a>
 						</Button>
 					</div>
-					{/* background-image: linear-gradient(135deg, #FBD786 10%, #f7797d 100%); */}
-					<Box className='box-border border py-10'>
+					<Box className='box-border py-10'>
 						<Title
 							order={3}
 							className='border-b-2 underline-offset-8 w-8'
@@ -104,19 +114,19 @@ const AboutMe = () => {
 					</div>
 				</div>
 
-				<div className=''>
+				<Box className='py-10 box-border'>
+					<Title
+						order={3}
+						className=' border-b-2 w-1/6 pl-1 pb-1 flex items-center'
+					>
+						Hobbies
+					</Title>
 					<div>
-						<Title
-							order={3}
-							className='border-b-2 underline-offset-8 w-14'
-						>
-							My fun
-						</Title>
-						<span>
+						<span className='flex flex-row indent-3 pt-3'>
 							Art, Building Keyboards, Gardening, Music
 						</span>
 					</div>
-				</div>
+				</Box>
 			</Animation>
 		</Container>
 	);

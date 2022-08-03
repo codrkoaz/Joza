@@ -1,6 +1,5 @@
 import {
 	Box,
-	Button,
 	Container,
 	Group,
 	Menu,
@@ -26,7 +25,7 @@ const Navbar = () => {
 				</div>
 
 				<Group className=' xs:invisible sm:invisible md:invisible flex flex-1 items-center font-bold '>
-					<div>
+					<div className='border-b-2 hover:'>
 						<Link href='/Work'>Work</Link>
 					</div>
 					<div>
@@ -47,7 +46,7 @@ const Navbar = () => {
 					<div className=' border-2 rounded-md cursor-pointer  p-1'>
 						<Switcher />
 					</div>
-					<div className='float-right rounded-md text-blue-200 md:hidden cursor-pointer pr-3 '>
+					<div className='float-right rounded-md text-blue-200 md:visible  2xl:invisible cursor-pointer pr-3 '>
 						<Menu
 							trigger='hover'
 							className=' border-2 p-1 rounded-md '

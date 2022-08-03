@@ -6,10 +6,10 @@ const logo = () => {
 	return (
 		<Box className='font-bold '>
 			<Link href='/'>
-				<div className='inline-flex font-bold items-center h-8 p-10 leading-5 cursor-pointer'>
-					<Text size='xl' className='font-bold text-2xl ml-3'>
+				<div className='inline-flex flex-nowrap font-bold items-center h-8 p-10 leading-5 cursor-pointer pr-5'>
+					<div className='font-extrabold text-2xl text-justify '>
 						Joza Smith
-					</Text>
+					</div>
 				</div>
 			</Link>
 		</Box>
