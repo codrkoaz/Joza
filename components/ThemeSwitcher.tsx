@@ -1,7 +1,6 @@
 import {
 	useMantineColorScheme,
 	ActionIcon,
-	Group,
 	Box,
 } from '@mantine/core';
 import { ImSun } from 'react-icons/im';
@@ -32,12 +31,12 @@ const ThemeSwitcher = () => {
 				onClick={() => toggleColorScheme()}
 				sx={(theme) => ({
 					backgroundColor:
-						theme.colorScheme === 'dark'
+						theme.colorScheme === 'light'
 							? theme.colors.dark[6]
-							: theme.colors.gray[2],
+							: theme.colors.gray[7],
 					color:
 						theme.colorScheme === 'dark'
-							? theme.colors.orange[2]
+							? theme.colors.orange[3]
 							: theme.colors.blue[8],
 				})}
 			>

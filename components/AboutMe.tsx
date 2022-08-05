@@ -9,19 +9,28 @@ import React from 'react';
 import Image from 'next/image';
 import Animation from './Animation';
 import { IconChevronRight } from '@tabler/icons';
+import { RiLightbulbLine } from 'react-icons/ri';
 import KBarCommand from './KBarCommand';
 
 const jozaPic =
 	'https://avatars.githubusercontent.com/u/51058620?s=400&u=24e9a67b6ad94629ae89079a88eece9ba1333898&v=4';
 
 const AboutMe = () => {
-
 	return (
 		<Container className='max-w-xl h-screen flex-1 justify-center items-center box-border'>
-			<KBarCommand/>
-			<div className='h-96'>
-
+			<KBarCommand />
+			<div className='pr-2 font-bold italic text-gray-500/80'>
+				<p className='flex items-center  mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400'>
+					<RiLightbulbLine className=' hover:text-yellow-300 hover:text-lg'size={21} />
+					<span>&nbsp; Tip: Use</span>
+					<button className='mx-2 inline bg-white focus:outline-none dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-400 text-gray-600 dark:text-white text-sm leading-5 py-0.5 px-1.5 border border-gray-500 rounded-md'>
+						<kbd className='font-sans no-underline'>⌘ </kbd>
+						<kbd className='font-sans'>K </kbd>
+					</button>
+					to quickly navigate the site.
+				</p>
 			</div>
+			<div className='h-96'></div>
 			<Box
 				sx={(theme) => ({
 					backgroundColor:
@@ -62,11 +71,11 @@ const AboutMe = () => {
 					<div>
 						<Title
 							order={3}
-							className='border-b-2 underline-offset-8 w-14 pt-3 '
+							className=' underline decoration-stone-200/40 underline-offset-8 pt-3 '
 						>
 							Work
 						</Title>
-						<p className='text-justify indent-4  pt-3 w-5/6'>
+						<p className='text-justify indent-4 pt-3 w-5/6'>
 							I'm a frontend developer and artist based in
 							Grand Rapids with a passion for building and
 							creating digital stuff. I have a keen for all
@@ -92,7 +101,7 @@ const AboutMe = () => {
 					<Box className='box-border py-10'>
 						<Title
 							order={3}
-							className='border-b-2 underline-offset-8 w-8'
+							className='underline decoration-stone-200/40 underline-offset-8'
 						>
 							Bio
 						</Title>
@@ -117,13 +126,14 @@ const AboutMe = () => {
 				<Box className='py-10 box-border'>
 					<Title
 						order={3}
-						className=' border-b-2 w-1/6 pl-1 pb-1 flex items-center'
+						className=' underline decoration-stone-200/40 underline-offset-8'
 					>
 						Hobbies
 					</Title>
 					<div>
 						<span className='flex flex-row indent-3 pt-3'>
-							Art, Building Keyboards, Gardening, Music
+							Art, Building Keyboards, Gardening, Music,
+							Learning Korean & Japanese
 						</span>
 					</div>
 				</Box>

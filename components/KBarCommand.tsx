@@ -20,7 +20,7 @@ const actions = [
 		id: 'skill',
 		name: 'Skill',
 		shortcut: ['s'],
-		keywords: 'practicing my skills, my skills',
+		keywords: 'my skills',
 		perform: () => (window.location.pathname = 'Skills'),
 	},
 ];
@@ -35,11 +35,7 @@ const KBarCommand = () => {
 					typeof item === 'string' ? (
 						<div>{item}</div>
 					) : (
-						<div
-							style={{
-								background: active ? 'black' : 'transparent',
-							}}
-						>
+						<div className='active:bg-black p-3 h-20'>
 							{item.name}
 						</div>
 					)
@@ -49,19 +45,17 @@ const KBarCommand = () => {
 	}
 
 	return (
-		
-			<KBarProvider actions={actions}>
-				<KBarPortal>
-					<KBarPositioner className='bg-black/70 font-bold text-lg flex items-center text-white'>
-                        <KBarAnimator className=' w-1/3 flex flex-col justify-center overflow-hidden p-2 dark:bg-black/80 rounded-xl'>
-							<KBarSearch className="flex px-4 w-full h-20 outline-none dark:bg-black/80"/>
-							<RenderResults />
-							{/* // Search input */}
-						</KBarAnimator>
-					</KBarPositioner>
-				</KBarPortal>
-			</KBarProvider>
-		
+		<KBarProvider actions={actions}>
+			<KBarPortal>// Renders the content outside the root node
+				<KBarPositioner className='bg-black/40 text-lg flex items-center text-white '>
+					<KBarAnimator className=' w-1/3 flex flex-col justify-center overflow-hidden p-2 bg-black rounded-xl'>
+						<KBarSearch className='flex px-4 w-full h-20 outline-none bg-black' />
+						<RenderResults />
+						{/* // Search input */}
+					</KBarAnimator>
+				</KBarPositioner>
+			</KBarPortal>
+		</KBarProvider>
 	);
 };
 
