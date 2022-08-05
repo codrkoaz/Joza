@@ -1,1 +1,1 @@
-a rewrite and redgn of my personal website and more to add.
+a rewrite and redesign of my personal website and more to add.
