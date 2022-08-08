@@ -1,6 +1,7 @@
 import Navbar from '../Navbar';
 import React from 'react';
 import Footer from '../Footer';
+import { Container } from '@mantine/core';
 
 interface Props {
 	children: React.ReactNode;
@@ -9,11 +10,11 @@ interface Props {
 const layout: React.FC<Props> = ({ children }) => {
 	return (
 		<>
-			<div>
 				<Navbar />
+			<div>
 				<main>{children}</main>
-				<Footer />
 			</div>
+				<Footer />
 		</>
 	);
 };

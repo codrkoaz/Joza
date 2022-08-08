@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
-  theme: {
-    screens: {
-      'xs': {'min': '320px', 'max': '639px'},
+	content: [
+		'./pages/**/*.{js,ts,jsx,tsx}',
+		'./components/**/*.{js,ts,jsx,tsx}',
+	],
+	theme: {
+		screens: {
+      'xs': { 'min': '320px', 'max': '639px' },
+      // => @media (min-width: 320px and max-width: 767px) { ... }
       'sm': {'min': '640px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
@@ -20,9 +21,8 @@ module.exports = {
 
       '2xl': {'min': '1536px'},
       // => @media (min-width: 1536px) { ... }
-    },
-    extend: {},
-    
-  },
-  plugins: [],
-}
+		},
+		extend: {},
+	},
+	plugins: [],
+};

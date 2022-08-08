@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import AboutMe from '../components/AboutMe';
+import AboutMe from '../components/Main';
 import Layout from '../components/Layout/layout';
 
 const Home: NextPage = () => {

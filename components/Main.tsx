@@ -11,6 +11,7 @@ import Animation from './Animation';
 import { IconChevronRight } from '@tabler/icons';
 import { RiLightbulbLine } from 'react-icons/ri';
 import KBarCommand from './KBarCommand';
+import JozaPic from '../public/assets/joza 1.png';
 
 const jozaPic =
 	'https://avatars.githubusercontent.com/u/51058620?s=400&u=24e9a67b6ad94629ae89079a88eece9ba1333898&v=4';
@@ -19,11 +20,14 @@ const AboutMe = () => {
 	return (
 		<Container className='max-w-xl h-screen flex-1 justify-center items-center box-border'>
 			<KBarCommand />
-			<div className='pr-2 font-bold italic text-gray-500/80'>
+			<div className='shrink-0 flex flex-row pr-2 font-bold italic text-gray-500/80'>
 				<p className='flex items-center  mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400'>
-					<RiLightbulbLine className=' hover:text-yellow-300 hover:text-lg'size={21} />
+					<RiLightbulbLine
+						className='shrink-0 hover:text-yellow-300 hover:text-lg'
+						size={21}
+					/>
 					<span>&nbsp; Tip: Use</span>
-					<button className='mx-2 inline bg-white focus:outline-none dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-400 text-gray-600 dark:text-white text-sm leading-5 py-0.5 px-1.5 border border-gray-500 rounded-md'>
+					<button className='shrink-0 mx-2 inline bg-white focus:outline-none dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-400 text-gray-600 dark:text-white text-sm leading-5 py-0.5 px-1.5 border border-gray-500 rounded-md'>
 						<kbd className='font-sans no-underline'>⌘ </kbd>
 						<kbd className='font-sans'>K </kbd>
 					</button>
@@ -46,7 +50,7 @@ const AboutMe = () => {
 			>
 				Hello, I'm an frontend developer based in Michigan!
 			</Box>
-			<Box className='flex  xs:flex-col justify-center items-center pt-8'>
+			<Box className='flex xs:flex-col justify-center items-center pt-8'>
 				<Box className='flex flex-auto flex-col'>
 					<Title order={2}>Joza Smith</Title>
 					<p>
@@ -54,14 +58,18 @@ const AboutMe = () => {
 						Designer)
 					</p>
 				</Box>
-				<Box className='flex items-center mt-4 mr-10'>
-					<Box className='flex border-gray-200 border-2 rounded-full overflow-hidden w-full h-full items-center hover:border-gray-500 cursor-pointer transition duration-200 ease-in-out'>
+				<Box className='flex shrink-0 items-center mt-4 mr-10'>
+					<Box className='flex border-gray-200 border-2 rounded-full overflow-hidden w-24 h- items-center hover:border-gray-500 cursor-pointer transition duration-200 ease-in-out'>
 						<a
 							href='https://github.com/koazie'
 							target='_blank'
 							rel='noopener'
 						>
-							<Avatar size={100} src={jozaPic} />
+							<Image
+								width='100%'
+								height='100%'
+								src={JozaPic}
+							/>
 						</a>
 					</Box>
 				</Box>
@@ -71,11 +79,11 @@ const AboutMe = () => {
 					<div>
 						<Title
 							order={3}
-							className=' underline decoration-stone-200/40 underline-offset-8 pt-3 '
+							className=' underline dark:decoration-stone-200/40 decoration-stone-800/40 underline-offset-8 pt-3 '
 						>
 							Work
 						</Title>
-						<p className='text-justify indent-4 pt-3 w-5/6'>
+						<p className='text-justify indent-4 pt-3 w-full'>
 							I'm a frontend developer and artist based in
 							Grand Rapids with a passion for building and
 							creating digital stuff. I have a keen for all

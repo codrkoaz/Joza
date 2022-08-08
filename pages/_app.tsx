@@ -5,8 +5,11 @@ import {
 	ColorSchemeProvider,
 	MantineProvider,
 } from '@mantine/core';
-import { useState } from 'react';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+
+import {
+	useHotkeys,
+	useLocalStorage,
+} from '@mantine/hooks';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [colorScheme, setColorScheme] =

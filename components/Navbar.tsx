@@ -24,24 +24,12 @@ const Navbar = () => {
 
 	return (
 		<Box>
-			<Container className='max-w-3xl flex backdrop-blur-md  flex-nowrap items-center gap-3 pl-1 pr-2 pt-2 '>
-				<div className='relative flex items-center'>
+			<Container className='max-w-2xl flex backdrop-blur-sm items-center gap-3 pl-1 pt-3 pr-10 '>
+				<div className=' flex shrink-0 items-center'>
 					<Logo />
 				</div>
-				{/* <nav>
-					{navRoutes.map((singleRoute) => {
-						return (
-							<navLinks
-								key={singleRoute}
-								href={`/{singleRoute}`}
-								text={singleRoute}
-								router={router}
-							/>
-						);
-					})}
-				</nav> */}
 
-				<Group className=' xs:invisible sm:invisible md:invisible flex flex-1 justify-start items-center font-bold  '>
+				<Group className=' xs:hidden flex flex-row items-center font-bold '>
 					<Link
 						href='/Work'
 						className='hover:underline decoration-2 underline-offset-4'
@@ -81,11 +69,11 @@ const Navbar = () => {
 					</div>
 				</Group>
 
-				<div className='max-w-md flex justify-end pt-2 ml-2 gap-2'>
-					<div className=' border-2 rounded-md cursor-pointer  p-1'>
+				<div className='flex flex-auto justify-end break-words gap-3 items-center p-1'>
+					<div className=' border-2 rounded-md cursor-pointer p-1'>
 						<Switcher />
 					</div>
-					<div className='float-right rounded-md text-blue-200 md:visible  2xl:invisible cursor-pointer pr-3 '>
+					<div className='relative hidden xs:flex justify-center box-border cursor-pointer'>
 						<Menu
 							trigger='hover'
 							className=' border-2 p-1 rounded-md '
@@ -114,22 +102,5 @@ const Navbar = () => {
 		</Box>
 	);
 };
-
-// function navLinks({ href, text, router }) {
-// 	const isActive =
-// 		router.asPath === (href === '/home' ? '/' : href);
-// 	return (
-// 		<Link href={href === '/home' ? '/' : href} passHref>
-// 			<a
-// 				href={href === '/home' ? '/' : href}
-// 				className={`${
-// 					isActive && 'nav_item_active'
-// 				} nav_item`}
-// 			>
-// 				{text}
-// 			</a>
-// 		</Link>
-// 	);
-// }
 
 export default Navbar;
