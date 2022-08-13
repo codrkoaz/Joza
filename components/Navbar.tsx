@@ -79,7 +79,7 @@ const Navbar = () => {
 					<div className='relative hidden xs:flex justify-center box-border cursor-pointer'>
 						<Menu
 							trigger='hover'
-							className=' border-2 p-1 rounded-md '
+							className=' border-2 p-1 rounded-md'
 						>
 							<Box className=' relative flex justify-center flex-col font-bold items-center '>
 								<div className='flex justify-center hover:bg-gray-500 w-full'>

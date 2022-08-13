@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 				<Container>
 					<Head>
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="koazie's homepage" />
+        <meta name="description" content="Joza Smith's homepage" />
         <meta name="author" content="Joza Smith" />
         <meta name="author" content="koazie" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />

@@ -9,7 +9,9 @@ const index = () => {
 			</Head>
       <Navbar />
 			<Container className='max-w-xl h-screen relative box-border'>
-				<h1>work</h1>
+				<div>
+					<h1>Work</h1>
+				</div>
 			</Container>
 			
 		</>
