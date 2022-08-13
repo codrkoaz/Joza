@@ -13,9 +13,6 @@ import { RiLightbulbLine } from 'react-icons/ri';
 import KBarCommand from './KBarCommand';
 import JozaPic from '../public/assets/joza 1.png';
 
-const jozaPic =
-	'https://avatars.githubusercontent.com/u/51058620?s=400&u=24e9a67b6ad94629ae89079a88eece9ba1333898&v=4';
-
 const AboutMe = () => {
 	return (
 		<Container className='max-w-xl h-screen flex-1 justify-center items-center box-border'>
@@ -43,7 +40,7 @@ const AboutMe = () => {
 							: theme.colors.gray[2],
 					textAlign: 'center',
 					fontSize: 'sm',
-					padding: theme.spacing.lg,
+					padding: theme.spacing.md,
 					borderRadius: theme.radius.lg,
 				})}
 				className='flex justify-center backdrop-blur-sm flex-wrap '
@@ -55,20 +52,22 @@ const AboutMe = () => {
 					<Title order={2}>Joza Smith</Title>
 					<p>
 						Digital Craftiman ( Artist / Developer /
-						Designer)
+						Designer )
 					</p>
 				</Box>
 				<Box className='flex shrink-0 items-center mt-4 mr-10'>
-					<Box className='flex border-gray-200 border-2 rounded-full overflow-hidden w-24 h- items-center hover:border-gray-500 cursor-pointer transition duration-200 ease-in-out'>
+					<Box className='block border-gray-200 border-2 rounded-full overflow-hidden w-24 h- items-center hover:border-gray-500 cursor-pointer transition duration-200 ease-in-out'>
 						<a
 							href='https://github.com/koazie'
 							target='_blank'
 							rel='noopener'
 						>
 							<Image
-								width='100%'
-								height='100%'
 								src={JozaPic}
+								alt='JozaPic'
+								width={100}
+								height={100}
+								layout='responsive'
 							/>
 						</a>
 					</Box>
@@ -79,7 +78,7 @@ const AboutMe = () => {
 					<div>
 						<Title
 							order={3}
-							className=' underline dark:decoration-stone-200/40 decoration-stone-800/40 underline-offset-8 pt-3 '
+							className=' underline dark:decoration-stone-300/50 decoration-stone-800/40 underline-offset-8 pt-3 '
 						>
 							Work
 						</Title>
@@ -94,22 +93,22 @@ const AboutMe = () => {
 							brand.
 						</p>
 					</div>
-					<div className='flex justify-center pb-5 pr-5 gap-4'>
-						<Button className=' flex justify-center items-center bg-gradient-to-r from-orange-300 to-red-400 border-none w-32 rounded-lg hover:from-red-400 hover:to-orange-300'>
-							<a
-								download
-								href='/JosephSmithResume.pdf'
-								className='flex justify-center items-center gap-4 pl-3'
-							>
+					<div className='flex justify-center pb-5 pr-5 gap-4 pt-2'>
+						<a
+							download
+							href='/JosephSmithResume.pdf'
+							className='flex justify-center items-center gap-4 pl-3'
+						>
+							<Button className=' flex justify-center items-center bg-gradient-to-r from-orange-300 to-red-400 border-none w-32 rounded-lg hover:from-red-400 hover:to-orange-300'>
 								Resume
 								<IconChevronRight size={15} />
-							</a>
-						</Button>
+							</Button>
+						</a>
 					</div>
 					<Box className='box-border py-10'>
 						<Title
 							order={3}
-							className='underline decoration-stone-200/40 underline-offset-8'
+							className='underline decoration-stone-300/50 underline-offset-8'
 						>
 							Bio
 						</Title>
@@ -134,14 +133,14 @@ const AboutMe = () => {
 				<Box className='py-10 box-border'>
 					<Title
 						order={3}
-						className=' underline decoration-stone-200/40 underline-offset-8'
+						className=' underline decoration-stone-300/50 underline-offset-8'
 					>
 						Hobbies
 					</Title>
 					<div>
-						<span className='flex flex-row indent-3 pt-3'>
+						<span className='flex flex-row indent-3 pt-3 justified'>
 							Art, Building Keyboards, Gardening, Music,
-							Learning Korean & Japanese
+							Playing Games, Learning Korean & Japanese
 						</span>
 					</div>
 				</Box>

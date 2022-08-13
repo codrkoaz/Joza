@@ -15,6 +15,7 @@ import {
 	IconPhoto,
 	IconSearch,
 	IconSettings,
+	IconBrandReddit
 } from '@tabler/icons';
 
 const navRoutes = ['work', 'skills'];
@@ -37,7 +38,7 @@ const Navbar = () => {
 						<a
 							className={`hover:underline decoration-2 underline-offset-4 p-2 ${
 								router.pathname == '/Work'
-									? 'bg-gray-500 rounded-md focus:bg-gray-500 text-stone-100'
+									? 'text-orange-300 text-lg'
 									: ''
 							}`}
 						>
@@ -51,20 +52,22 @@ const Navbar = () => {
 						<a
 							className={`hover:underline decoration-2 underline-offset-4 p-2 ${
 								router.pathname == '/Skills'
-									? 'bg-gray-500 rounded-md focus:bg-gray-500 text-stone-100 '
+									? 'text-orange-300 text-lg'
 									: ''
 							}`}
 						>
 							Skills
 						</a>
 					</Link>
-					<div className='hover:underline decoration-2 underline-offset-4'>
+					<div className=' hover:underline decoration-2 underline-offset-4'>
 						<a
 							href='https://www.github.com/koazie'
 							target='_blank'
 							rel='noopener'
+							className='flex items-center gap-2'
 						>
 							Source
+						<IconBrandReddit size={20}/>
 						</a>
 					</div>
 				</Group>
