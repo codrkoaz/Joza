@@ -1,9 +1,11 @@
 # **Joza's Homepage**
 
-
+<p align="center">
 a rewrite and redesign of my personal homepage.
 
-![Screen Shot 2022-10-17 at 8 36 32 PM](https://user-images.githubusercontent.com/51058620/196308718-ae62bfca-a81f-4b55-953f-dbad5dbc8dfe.png)
+
+![img](https://user-images.githubusercontent.com/51058620/196308718-ae62bfca-a81f-4b55-953f-dbad5dbc8dfe.png#center)
+
 
 
 
