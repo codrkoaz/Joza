@@ -15,7 +15,7 @@ import {
 	IconPhoto,
 	IconSearch,
 	IconSettings,
-	IconBrandReddit
+	IconBrandGithub
 } from '@tabler/icons';
 
 const navRoutes = ['work', 'skills'];
@@ -67,7 +67,7 @@ const Navbar = () => {
 							className='flex items-center gap-2'
 						>
 							Source
-						<IconBrandReddit size={20}/>
+						<IconBrandGithub size={20}/>
 						</a>
 					</div>
 				</Group>

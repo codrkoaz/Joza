@@ -118,9 +118,14 @@ const AboutMe = () => {
 								Montreal, Quebec
 							</span>
 							<span className='flex flex-row gap-3 justified'>
+								<p className='font-bold'>2015</p> Received my Certificate in Graphic Designs from Washtenaw Community College
+							</span>
+							<span className='flex flex-row gap-3 justified'>
 								<p className='font-bold'>2021</p> Completed
-								the Kenzie Academy Associate Frontend Web
-								Development Program
+								my Associate Frontend Web Development Program from Kenzie Academy
+							</span>
+							<span className='flex flex-row gap-3 justified'>
+								<p className='font-bold'>2022</p> Built and managing my clothing brand Unknwn Rarity
 							</span>
 						</div>
 					</Box>
