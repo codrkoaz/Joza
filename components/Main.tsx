@@ -31,7 +31,7 @@ const AboutMe = () => {
 					to quickly navigate the site.
 				</p>
 			</div>
-			<div className='h-96'></div>
+			<div className='h-24'></div>
 			<Box
 				sx={(theme) => ({
 					backgroundColor:
@@ -65,8 +65,8 @@ const AboutMe = () => {
 							<Image
 								src={JozaPic}
 								alt='JozaPic'
-								width={100}
-								height={100}
+								width='100%'
+								height='100%'
 								layout='responsive'
 							/>
 						</a>
