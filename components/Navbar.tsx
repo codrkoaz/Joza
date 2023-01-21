@@ -61,7 +61,7 @@ const Navbar = () => {
 					</Link>
 					<div className=' hover:underline decoration-2 underline-offset-4'>
 						<a
-							href='https://www.github.com/koazie'
+							href='https://www.github.com/codrkoaz'
 							target='_blank'
 							rel='noopener'
 							className='flex items-center gap-2'
@@ -90,7 +90,7 @@ const Navbar = () => {
 								</div>
 								<div className='flex justify-center hover:bg-gray-500 w-full'>
 									<a
-										href='https://www.github.com/koazie'
+										href='https://www.github.com/codrkoaz'
 										target='_blank'
 										rel='noopener'
 									>

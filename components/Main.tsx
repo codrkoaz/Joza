@@ -58,7 +58,7 @@ const AboutMe = () => {
 				<Box className='flex shrink-0 items-center mt-4 mr-10'>
 					<Box className='block border-gray-200 border-2 rounded-full overflow-hidden w-24 h- items-center hover:border-gray-500 cursor-pointer transition duration-200 ease-in-out'>
 						<a
-							href='https://github.com/koazie'
+							href='https://github.com/codrkoaz'
 							target='_blank'
 							rel='noopener'
 						>

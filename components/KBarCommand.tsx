@@ -17,8 +17,8 @@ const actions = [
 		perform: () => (window.location.pathname = 'Work'),
 	},
 	{
-		id: 'skill',
-		name: 'Skill',
+		id: 'skills',
+		name: 'Skills',
 		shortcut: ['s'],
 		keywords: 'my skills',
 		perform: () => (window.location.pathname = 'Skills'),
