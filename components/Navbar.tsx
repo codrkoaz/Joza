@@ -26,11 +26,11 @@ const Navbar = () => {
 	return (
 		<Box>
 			<Container className='flex items-center max-w-2xl gap-3 pt-3 pl-1 pr-10 backdrop-blur-sm '>
-				<div className='flex items-center  shrink-0'>
+				<div className='flex items-center shrink-0'>
 					<Logo />
 				</div>
 
-				<Group className='flex flex-row items-center font-bold  xs:hidden'>
+				<Group className='flex flex-row items-center font-bold xs:hidden'>
 					<Link
 						href='/Work'
 						className='hover:underline decoration-2 underline-offset-4'

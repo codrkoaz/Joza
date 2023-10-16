@@ -32,7 +32,7 @@ const ThemeSwitcher = () => {
 				sx={(theme) => ({
 					backgroundColor:
 						theme.colorScheme === 'light'
-							? theme.colors.dark[6]
+							? theme.colors.dark[9]
 							: theme.colors.gray[7],
 					color:
 						theme.colorScheme === 'dark'
