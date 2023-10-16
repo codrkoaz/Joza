@@ -1,4 +1,5 @@
 # **Joza's Homepage**
+<a href="https://github.com/codrkoaz/joza">Joza</a>
 
 <p align="center">
 a rewrite and redesign of my personal homepage.
@@ -11,8 +12,10 @@ a rewrite and redesign of my personal homepage.
 
 
 ## Stack
----
-
 - [Next.js](https://nextjs.org/) - A React framework with hybird statoc & server rendering, and route pre-fetching, etc.
 - [Tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom user interfaces.
 - [Mantine](https://mantine.dev/) - collection of 40+ hooks for state and UI management
+- [Framer Motion](https://www.framer.com/motion/) -An Animations library for React
+---
+
+My inspiration to revramp my homepage came from Takuya Matsuyama's Homepage.

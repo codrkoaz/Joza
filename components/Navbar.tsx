@@ -25,12 +25,12 @@ const Navbar = () => {
 
 	return (
 		<Box>
-			<Container className='max-w-2xl flex backdrop-blur-sm items-center gap-3 pl-1 pt-3 pr-10 '>
-				<div className=' flex shrink-0 items-center'>
+			<Container className='flex items-center max-w-2xl gap-3 pt-3 pl-1 pr-10 backdrop-blur-sm '>
+				<div className='flex items-center  shrink-0'>
 					<Logo />
 				</div>
 
-				<Group className=' xs:hidden flex flex-row items-center font-bold '>
+				<Group className='flex flex-row items-center font-bold  xs:hidden'>
 					<Link
 						href='/Work'
 						className='hover:underline decoration-2 underline-offset-4'
@@ -61,7 +61,7 @@ const Navbar = () => {
 					</Link>
 					<div className=' hover:underline decoration-2 underline-offset-4'>
 						<a
-							href='https://www.github.com/codrkoaz'
+							href='https://github.com/codrkoaz/joza'
 							target='_blank'
 							rel='noopener'
 							className='flex items-center gap-2'
@@ -72,23 +72,23 @@ const Navbar = () => {
 					</div>
 				</Group>
 
-				<div className='flex flex-auto justify-end break-words gap-3 items-center p-1'>
-					<div className=' border-2 rounded-md cursor-pointer p-1'>
+				<div className='flex items-center justify-end flex-auto gap-3 p-1 break-words'>
+					<div className='p-1 border-2 rounded-md cursor-pointer '>
 						<Switcher />
 					</div>
-					<div className='relative hidden xs:flex justify-center box-border cursor-pointer'>
+					<div className='box-border relative justify-center hidden cursor-pointer xs:flex'>
 						<Menu
 							trigger='hover'
-							className=' border-2 p-1 rounded-md'
+							className='p-1 border-2 rounded-md '
 						>
-							<Box className=' relative flex justify-center flex-col font-bold items-center '>
-								<div className='flex justify-center hover:bg-gray-500 w-full'>
+							<Box className='relative flex flex-col items-center justify-center font-bold '>
+								<div className='flex justify-center w-full hover:bg-gray-500'>
 									<Link href='/Work'>Work</Link>
 								</div>
-								<div className='flex justify-center hover:bg-gray-500 w-full'>
+								<div className='flex justify-center w-full hover:bg-gray-500'>
 									<Link href='/Skills'>Skills</Link>
 								</div>
-								<div className='flex justify-center hover:bg-gray-500 w-full'>
+								<div className='flex justify-center w-full hover:bg-gray-500'>
 									<a
 										href='https://www.github.com/codrkoaz'
 										target='_blank'
