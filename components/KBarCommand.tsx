@@ -35,7 +35,7 @@ const KBarCommand = () => {
 					typeof item === 'string' ? (
 						<div>{item}</div>
 					) : (
-						<div className={`bg-${active ? 'gray-400' : 'red-200 '} hover:`} >
+						<div className={`bg-${active ? 'gray-400' : 'transparent'} h-14 `} >
 							{item.name}
 						</div>
 					)
@@ -48,8 +48,8 @@ const KBarCommand = () => {
 		<KBarProvider actions={actions}>
 			<KBarPortal>// Renders the content outside the root node
 				<KBarPositioner className='flex items-center text-lg text-white bg-black/50 '>
-					<KBarAnimator className='flex flex-col justify-center p-2 overflow-hidden bg-zinc-900 w-96 rounded-xl'>
-						<KBarSearch className='flex w-full h-20 px-4 bg-transparent outline-none ' />
+					<KBarAnimator className='flex flex-col justify-center p-2 bg-zinc-900 w-96 rounded-xl'>
+						<KBarSearch className='flex w-full h-20 px-4 bg-transparent outline-none' />
 						<RenderResults />
 						{/* // Search input */}
 					</KBarAnimator>
