@@ -74,11 +74,12 @@ const AboutMe = () => {
               Work
             </Title>
             <p className="w-full pt-3 text-justify indent-4">
-              I'm a frontend developer and digital artist based in Grand Rapids
-              with a passion for building and creating fun stuff. I have a keen
-              for all things from planning and designing all the way to solving
-              problem I face with code. When I'm not online I like to play games
-              and make designs for my clothing brand.
+              I am a frontend developer and digital artist based in Grand
+              Rapids, with a passion for building and creating enjoyable
+              projects I like. I possess a strong interest in everthing from
+              planning and designing to solve coding challenges I face. When I'm
+              offline, I enjoy playing games and designing for my clothing
+              brand.
             </p>
           </div>
           <div className="flex justify-center gap-4 pt-2 pb-5 pr-5">

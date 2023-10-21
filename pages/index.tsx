@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import AboutMe from '../components/Main';
 import Layout from '../components/Layout/layout';
+import KBarCommand from '../components/KBarCommand';
 
 const Home: NextPage = () => {
 	return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
 						<title>codrkoaz • home </title>
 					</Head>
+					<KBarCommand />
 					<AboutMe />
 				</Container>
 			</Layout>
