@@ -28,9 +28,8 @@ const actions = [
     name: "Brand",
     shortcut: ["brand"],
     keywords: "brand, Brand",
-    perform: () => window.open("https://adreamersfuture.co", '_blank'),
+    perform: () => window.open("https://adreamersfuture.co", "_blank"),
   },
-
 ];
 
 const KBarCommand = () => {

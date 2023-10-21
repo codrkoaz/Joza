@@ -24,7 +24,7 @@ const NotFound: React.FC = () => {
           >
             <img
               src="/assets/driving.gif"
-              alt="background1"
+              alt="background-1"
               className="w-screen h-screen object-fit"
             />
           </div>
@@ -36,7 +36,7 @@ const NotFound: React.FC = () => {
         >
           <img
             src="assets/trainstation.gif"
-            alt="background2"
+            alt="background-2"
             className="w-screen h-screen object-fit"
           />
         </div>
@@ -47,7 +47,7 @@ const NotFound: React.FC = () => {
         >
           <img
             src="assets/bored-anime.gif"
-            alt="background3"
+            alt="background-3"
             className="w-screen h-screen object-fit"
           />
         </div>
