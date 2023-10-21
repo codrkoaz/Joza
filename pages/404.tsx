@@ -23,7 +23,7 @@ const NotFound: React.FC = () => {
             } transition-opacity duration-1000 ease-in`}
           >
             <img
-              src="/assets/driving.gif"
+              src={'/assets/driving.gif'}
               alt="background-1"
               className="w-screen h-screen object-fit"
             />
@@ -35,7 +35,7 @@ const NotFound: React.FC = () => {
           } transition-opacity duration-1000 ease-in`}
         >
           <img
-            src="assets/trainstation.gif"
+            src={'assets/trainstation.gif'}
             alt="background-2"
             className="w-screen h-screen object-fit"
           />
@@ -46,7 +46,7 @@ const NotFound: React.FC = () => {
           } transition-opacity duration-1000 ease-in`}
         >
           <img
-            src="assets/bored-anime.gif"
+            src={'assets/bored-anime.gif'}
             alt="background-3"
             className="w-screen h-screen object-fit"
           />
