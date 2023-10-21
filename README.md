@@ -1,5 +1,5 @@
 # **Joza's Homepage**
-<a href="https://github.com/codrkoaz/joza">Joza</a>
+<a href="https://joza-beta.vercel.app/">Joza</a>
 
 <p align="center">
 a rewrite and redesign of my personal homepage.

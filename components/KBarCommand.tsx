@@ -43,7 +43,7 @@ const KBarCommand = () => {
           typeof item === "string" ? (
             <div>{item}</div>
           ) : (
-            <div className={`bg-${active ? "gray-400" : "transparent"} h-14 `}>
+            <div className={`bg-${active ? "gray-400" : "transparent"} h-12 `}>
               {item.name}
             </div>
           )

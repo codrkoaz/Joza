@@ -38,7 +38,7 @@ const Navbar = () => {
 						<a
 							className={`hover:underline decoration-2 underline-offset-4 p-2 ${
 								router.pathname == '/Work'
-									? 'text-orange-300 text-lg'
+									? 'text-lg'
 									: ''
 							}`}
 						>
@@ -52,7 +52,7 @@ const Navbar = () => {
 						<a
 							className={`hover:underline decoration-2 underline-offset-4 p-2 ${
 								router.pathname == '/Skills'
-									? 'text-orange-300 text-lg'
+									? 'text-lg'
 									: ''
 							}`}
 						>

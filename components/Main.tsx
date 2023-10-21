@@ -132,7 +132,7 @@ const AboutMe = () => {
           </Title>
           <div>
             <span className="flex flex-row p-3 indent-3 justified">
-              Art, Music,Paying Games, Building Keyboard, Creating Clothes
+              Art, Music, Playing Games, Building Keyboard, Creating Clothes
             </span>
           </div>
         </Box>
