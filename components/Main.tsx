@@ -4,13 +4,11 @@ import Image from "next/image";
 import Animation from "./Animation";
 import { IconChevronRight } from "@tabler/icons";
 import { RiLightbulbLine } from "react-icons/ri";
-import KBarCommand from "./KBarCommand";
 import JozaPic from "../public/assets/joza 1.png";
 
 const AboutMe = () => {
   return (
     <Container className="box-border items-center justify-center flex-1 h-screen max-w-xl">
-      <KBarCommand />
       <div className="flex flex-row pr-2 italic font-bold shrink-0 text-gray-500/80">
         <p className="flex items-center mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400">
           <RiLightbulbLine
