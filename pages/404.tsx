@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { Box, Container, Text, Title } from "@mantine/core";
 import Link from "next/link";
+// import BoringAnime  from '../public/assets/bored-anime.gif'
+// import TrainStation  from '../public/assets/trainstation.gif'
+// import Driving  from '../public/assets/driving.gif'
 
 const NotFound: React.FC = () => {
   const [currentBackground, setCurrentBackground] = useState(1);
@@ -22,11 +26,7 @@ const NotFound: React.FC = () => {
               currentBackground === 1 ? "opacity-100" : "opacity-0"
             } transition-opacity duration-1000 ease-in`}
           >
-            <img
-              src={'/assets/driving.gif'}
-              alt="background-1"
-              className="w-screen h-screen object-fit"
-            />
+            <img src='/images/driving.gif' className="w-screen h-screen object-fit " />
           </div>
         </div>
         <div
@@ -35,7 +35,7 @@ const NotFound: React.FC = () => {
           } transition-opacity duration-1000 ease-in`}
         >
           <img
-            src={'assets/trainstation.gif'}
+            src='/images/trainstation.gif'
             alt="background-2"
             className="w-screen h-screen object-fit"
           />
@@ -46,7 +46,7 @@ const NotFound: React.FC = () => {
           } transition-opacity duration-1000 ease-in`}
         >
           <img
-            src={'assets/bored-anime.gif'}
+            src='/images/bored-anime.gif'
             alt="background-3"
             className="w-screen h-screen object-fit"
           />
