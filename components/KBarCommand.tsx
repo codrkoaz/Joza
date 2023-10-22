@@ -10,6 +10,13 @@ import {
 
 const actions = [
   {
+    id: "home",
+    name: "Home",
+    shortcut: ["Home"],
+    keywords: "Home, Home",
+    perform: () => (window.location.pathname = "/"),
+  },
+  {
     id: "work",
     name: "Work",
     shortcut: ["work"],
