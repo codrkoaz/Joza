@@ -2,7 +2,7 @@ import React from "react";
 import KBarCommand from "../../components/KBarCommand";
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
-import {Container, Group } from "@mantine/core";
+import { Container, Group } from "@mantine/core";
 
 const Skills = () => {
   return (
@@ -29,7 +29,6 @@ const Skills = () => {
           </p>
         </Group>
         <Group className="p-8 bg-zinc-800 box-border flex flex-column items-center justify-center h-[50vh] border-2 w-[30vm] leading-6 z-2 font-sans rounded-lg ">
-          
           <h2 className="font-sans text-2xl font-bold">Digital Designer</h2>
           <div className="absolute flex flex-row items-center justify-center gap-2">
             <img src="/assets/figma.png" alt="figma" />
