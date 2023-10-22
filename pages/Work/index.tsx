@@ -5,9 +5,7 @@ import KBarCommand from "../../components/KBarCommand";
 const index = () => {
   return (
     <>
-      <Head>
-        <title>koazie • work</title>
-      </Head>
+      <title>koazie • work</title>
       <KBarCommand />
       <Navbar />
       <Container className="box-border relative h-screen max-w-xl">

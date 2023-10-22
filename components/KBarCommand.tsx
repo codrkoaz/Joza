@@ -21,14 +21,14 @@ const actions = [
     name: "Work",
     shortcut: ["work"],
     keywords: "working, works, Work",
-    perform: () => (window.location.pathname = "Work"),
+    perform: () => (window.location.pathname = "work"),
   },
   {
     id: "skills",
     name: "Skills",
     shortcut: ["skills"],
     keywords: "skills, Skills",
-    perform: () => (window.location.pathname = "Skills"),
+    perform: () => (window.location.pathname = "skills"),
   },
   {
     id: "brand",

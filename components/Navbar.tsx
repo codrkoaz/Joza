@@ -1,4 +1,4 @@
-import { Box, Container, Group, Menu, Text } from "@mantine/core";
+import { Box, Container, Group, Menu} from "@mantine/core";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Switcher from "./ThemeSwitcher";
@@ -31,7 +31,7 @@ const Navbar = () => {
           >
             <a
               className={`hover:underline decoration-2 underline-offset-4 p-2 ${
-                router.pathname == "/Work" ? "text-lg" : ""
+                router.pathname == "/work" ? "text-lg" : ""
               }`}
             >
               Work
@@ -49,6 +49,7 @@ const Navbar = () => {
               Skills
             </a>
           </Link>
+          
           <div className=" hover:underline decoration-2 underline-offset-4">
             <a
               href="https://github.com/codrkoaz/joza"
