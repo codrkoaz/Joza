@@ -84,9 +84,9 @@ const AboutMe = () => {
             <a
               download
               href="/newResume.pdf"
-              className="flex items-center justify-center gap-4 pl-3"
+              className="flex items-center justify-center gap-4 pl-3 bg-inherit"
             >
-              <Button className="flex items-center justify-center w-32 bg-orange-400 border-none rounded-lg">
+              <Button className="flex items-center justify-center w-32 bg-orange-300 border-none rounded-lg hover:bg-orange-500 ">
                 Resume
                 <IconChevronRight size={15} />
               </Button>
