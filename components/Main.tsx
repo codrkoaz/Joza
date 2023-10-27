@@ -9,7 +9,7 @@ import JozaPic from "../public/assets/images/joza.png";
 const AboutMe = () => {
   return (
     <Container className="box-border items-center justify-center flex-1 h-screen max-w-xl">
-      <div className="flex flex-row pr-2 italic font-bold shrink-0 text-gray-500/80">
+      <div className="flex flex-row pr-2 italic font-bold shrink-0 text-gray-500/80 xs:hidden">
         <p className="flex items-center mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400">
           <RiLightbulbLine
             className="shrink-0 hover:text-yellow-300 hover:text-lg"
@@ -86,7 +86,7 @@ const AboutMe = () => {
               href="/newResume.pdf"
               className="flex items-center justify-center gap-4 pl-3"
             >
-              <Button className="flex items-center justify-center w-32 border-none rounded-lg bg-gradient-to-r from-orange-300 to-red-400 hover:from-red-400 hover:to-orange-300">
+              <Button className="flex items-center justify-center w-32 bg-orange-400 border-none rounded-lg">
                 Resume
                 <IconChevronRight size={15} />
               </Button>

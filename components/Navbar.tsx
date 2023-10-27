@@ -10,9 +10,10 @@ import {
   IconSettings,
   IconBrandGithub,
 } from "@tabler/icons";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
-
+  const router = useRouter();
   return (
     <Box>
       <Container className="flex items-center max-w-2xl gap-3 pt-3 pl-1 pr-10 backdrop-blur-sm ">
@@ -20,22 +21,35 @@ const Navbar = () => {
           <Logo />
         </div>
 
-        <Group className="flex flex-row items-center font-bold xs:hidden">
-          <Link
-            href="/Work"
-            className="p-2 hover:underline decoration-2 underline-offset-4"
-          >
-            Work
+        <Group className="flex flex-row items-center p-2 font-bold xs:hidden">
+          <Link href="/Work">
+            <a
+              className={`p-2 hover:underline flex items-center underline-offset-4 decoration-2
+                ${
+                  router.pathname == "/Work"
+                    ? "bg-orange-400 text-zinc-900 underline-offset-4 decoration-2  underline"
+                    : ""
+                }
+              `}
+            >
+              Work
+            </a>
+          </Link>
+          <Link href="/Skills">
+            <a
+              className={`p-2 hover:underline underline-offset-4 items-center flex decoration-2
+                ${
+                  router.pathname == "/Skills"
+                    ? "text-zinc-900 bg-orange-400 underline-offset-4 decoration-2 underline"
+                    : ""
+                }
+              `}
+            >
+              Skills
+            </a>
           </Link>
 
-          <Link
-            href="/Skills"
-            className="p-2 hover:underline decoration-2 underline-offset-4"
-          >
-            Skills
-          </Link>
-
-          <div className=" hover:underline decoration-2 underline-offset-4">
+          <div className="hover:underline decoration-2 underline-offset-4">
             <a
               href="https://github.com/codrkoaz/joza"
               target="_blank"
@@ -55,7 +69,7 @@ const Navbar = () => {
           <div className="box-border relative justify-center hidden cursor-pointer xs:flex">
             <Menu trigger="hover" className="p-1 border-2 rounded-md ">
               <Box className="relative flex flex-col items-center justify-center font-bold ">
-                <div className="flex justify-center w-full hover:bg-gray-500">
+                <div className="flex justify-center w-full hover:bg-gray-500 active:bg-orange-300">
                   <Link href="/Work">Work</Link>
                 </div>
                 <div className="flex justify-center w-full hover:bg-gray-500">
