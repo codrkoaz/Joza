@@ -1,6 +1,5 @@
-import { Box, Container, Group, Menu} from "@mantine/core";
+import { Box, Container, Group, Menu } from "@mantine/core";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Switcher from "./ThemeSwitcher";
 import Logo from "./logo";
 import {
@@ -12,10 +11,7 @@ import {
   IconBrandGithub,
 } from "@tabler/icons";
 
-const navRoutes = ["work", "skills"];
-
 const Navbar = () => {
-  const router = useRouter();
 
   return (
     <Box>
@@ -27,29 +23,18 @@ const Navbar = () => {
         <Group className="flex flex-row items-center font-bold xs:hidden">
           <Link
             href="/Work"
-            className="hover:underline decoration-2 underline-offset-4"
+            className="p-2 hover:underline decoration-2 underline-offset-4"
           >
-            <a
-              className={`hover:underline decoration-2 underline-offset-4 p-2 ${
-                router.pathname == "/work" ? "text-lg" : ""
-              }`}
-            >
-              Work
-            </a>
+            Work
           </Link>
+
           <Link
             href="/Skills"
-            className="hover:underline decoration-2 underline-offset-4"
+            className="p-2 hover:underline decoration-2 underline-offset-4"
           >
-            <a
-              className={`hover:underline decoration-2 underline-offset-4 p-2 ${
-                router.pathname == "/Skills" ? "text-lg" : ""
-              }`}
-            >
-              Skills
-            </a>
+            Skills
           </Link>
-          
+
           <div className=" hover:underline decoration-2 underline-offset-4">
             <a
               href="https://github.com/codrkoaz/joza"

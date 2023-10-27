@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Box, Container, Text, Title } from "@mantine/core";
 import Link from "next/link";
-// import BoringAnime  from '../public/assets/bored-anime.gif'
-// import TrainStation  from '../public/assets/trainstation.gif'
-// import Driving  from '../public/assets/driving.gif'
+
 
 const NotFound: React.FC = () => {
   const [currentBackground, setCurrentBackground] = useState(1);

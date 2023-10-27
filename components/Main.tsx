@@ -4,7 +4,7 @@ import Image from "next/image";
 import Animation from "./Animation";
 import { IconChevronRight } from "@tabler/icons";
 import { RiLightbulbLine } from "react-icons/ri";
-import JozaPic from "../public/assets/joza 1.png";
+import JozaPic from "../public/assets/images/joza.png";
 
 const AboutMe = () => {
   return (
