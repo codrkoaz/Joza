@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Box, Container, Text, Title } from '@mantine/core';
 import Link from 'next/link';
-import Bored from '../public/assets/gifs/bored-anime.gif';
-import Driving from '../public/assets/gifs/driving.gif';
-import Typing from '../public/assets/gifs/typing.gif';
-import TrainStation from '../public/assets/gifs/trainstation.gif';
+import Bored from '../public/gifs/bored-anime.gif';
+import Driving from '../public/gifs/driving.gif';
+import Typing from '../public/gifs/typing.gif';
+import TrainStation from '../public/gifs/trainstation.gif';
 
 const NotFound: React.FC = () => {
   const [currentBackground, setCurrentBackground] = useState(1);
