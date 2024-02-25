@@ -1,52 +1,69 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import { Box, Container, Text, Title } from "@mantine/core";
-import Link from "next/link";
-
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { Box, Container, Text, Title } from '@mantine/core';
+import Link from 'next/link';
+import Bored from '../public/assets/gifs/bored-anime.gif';
+import Driving from '../public/assets/gifs/driving.gif';
+import Typing from '../public/assets/gifs/typing.gif';
+import TrainStation from '../public/assets/gifs/trainstation.gif';
 
 const NotFound: React.FC = () => {
   const [currentBackground, setCurrentBackground] = useState(1);
 
   useEffect(() => {
-    const randomBackground = Math.floor(Math.random() * 3) + 1;
+    const randomBackground = Math.floor(Math.random() * 4) + 1;
     setCurrentBackground(randomBackground);
   }, []);
 
   return (
     <>
       <Container className="flex flex-col items-center justify-center w-screen h-screen gap-3 ">
-        <Title className="z-10 text-4xl" order={1}>
+        <Title className="z-10 text-6xl hover:text-slate-200" order={1}>
           Not Found
         </Title>
         <div className="absolute top-0 left-0 w-full h-full ">
           <div
             className={`absolute top-0 left-0 w-screen h-screen z-0 ${
-              currentBackground === 1 ? "opacity-100" : "opacity-0"
+              currentBackground === 1 ? 'opacity-100' : 'opacity-0'
             } transition-opacity duration-1000 ease-in`}
           >
-            <img src='/images/driving.gif' className="w-screen h-screen object-fit " />
+            <Image src={Typing} width={2000} height={2000} />
           </div>
         </div>
         <div
           className={`absolute top-0 left-0 w-full h-full z-0 ${
-            currentBackground === 2 ? "opacity-100" : "opacity-0"
+            currentBackground === 2 ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-1000 ease-in`}
         >
-          <img
-            src='/images/trainstation.gif'
-            alt="background-2"
-            className="w-screen h-screen object-fit"
+          <Image
+            src={Bored}
+            width={2000}
+            height={2000}
+            className="w-screen h-screen"
           />
         </div>
         <div
           className={`absolute top-0 left-0 w-full h-full z-0 ${
-            currentBackground === 3 ? "opacity-100" : "opacity-0"
+            currentBackground === 3 ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-1000 ease-in`}
         >
-          <img
-            src='/images/bored-anime.gif'
-            alt="background-3"
-            className="w-screen h-screen object-fit"
+          <Image
+            src={Driving}
+            width={2000}
+            height={2000}
+            className="w-screen h-screen"
+          />
+        </div>
+        <div
+          className={`absolute top-0 left-0 w-full h-full z-0 ${
+            currentBackground === 4 ? 'opacity-100' : 'opacity-0'
+          } transition-opacity duration-1000 ease-in`}
+        >
+          <Image
+            src={TrainStation}
+            width={2000}
+            height={2000}
+            className="w-screen h-screen"
           />
         </div>
 
