@@ -1,8 +1,8 @@
-import Navbar from "../Navbar";
-import React from "react";
-import Footer from "../Footer";
-import { Container } from "@mantine/core";
-import KBarCommand from "../KBarCommand";
+import Navbar from '../Navbar';
+import React from 'react';
+import Footer from '../Footer';
+import { Container } from '@mantine/core';
+import KBarCommand from '../KBarCommand';
 
 interface Props {
   children: React.ReactNode;

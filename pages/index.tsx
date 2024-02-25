@@ -4,6 +4,7 @@ import Head from 'next/head';
 import AboutMe from '../components/Main';
 import Layout from '../components/Layout/layout';
 
+
 const Home: NextPage = () => {
 	return (
 		<>

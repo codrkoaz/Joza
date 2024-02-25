@@ -1,10 +1,10 @@
-import { Avatar, Box, Button, Container, Title } from "@mantine/core";
-import React from "react";
-import Image from "next/image";
-import Animation from "./Animation";
-import { IconChevronRight } from "@tabler/icons";
-import { RiLightbulbLine } from "react-icons/ri";
-import JozaPic from "../public/assets/images/joza.png";
+import { Avatar, Box, Button, Container, Title } from '@mantine/core';
+import React from 'react';
+import Image from 'next/image';
+import Animation from './Animation';
+import { IconChevronRight } from '@tabler/icons';
+import { RiLightbulbLine } from 'react-icons/ri';
+import JozaPic from '../public/assets/images/joza.png';
 
 const AboutMe = () => {
   return (
@@ -27,11 +27,11 @@ const AboutMe = () => {
       <Box
         sx={(theme) => ({
           backgroundColor:
-            theme.colorScheme === "dark"
+            theme.colorScheme === 'dark'
               ? theme.colors.dark[5]
               : theme.colors.gray[2],
-          textAlign: "center",
-          fontSize: "sm",
+          textAlign: 'center',
+          fontSize: 'sm',
           padding: theme.spacing.md,
           borderRadius: theme.radius.lg,
         })}
@@ -82,9 +82,11 @@ const AboutMe = () => {
           </div>
           <div className="flex justify-center gap-4 pt-2 pb-5 pr-5">
             <a
-              download
-              href="/newResume.pdf"
+              href="/mybrandnewresume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-4 pl-3 bg-inherit"
+              download
             >
               <Button className="flex items-center justify-center w-32 bg-orange-300 border-none rounded-lg hover:bg-orange-500 ">
                 Resume
@@ -113,7 +115,7 @@ const AboutMe = () => {
               </span>
               <span className="flex flex-row gap-3 justified">
                 <p className="font-bold">2022</p> Built and managing my clothing
-                brand "ADreamerFuture"
+                brand "ADREAMERSFUTURE"
               </span>
             </div>
           </Box>
