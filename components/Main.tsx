@@ -42,7 +42,7 @@ const AboutMe = () => {
       <Box className="flex items-center justify-center pt-8 xs:flex-col">
         <Box className="flex flex-col flex-auto">
           <Title order={2}>Joza Smith</Title>
-          <p>Digital Craftiman ( Artist / Developer / Designer )</p>
+          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
         </Box>
         <Box className="flex items-center mt-4 mr-10 shrink-0">
           <Box className="items-center block w-24 overflow-hidden transition duration-200 ease-in-out border-2 border-gray-200 rounded-full cursor-pointer h- hover:border-gray-500">

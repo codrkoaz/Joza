@@ -72,7 +72,7 @@ const NotFound: React.FC = () => {
           color="white"
           className="z-10 text-3xl text-gray-200"
         >
-          The page you're looking for somewhere in space.
+          The page you're looking for is somewhere in space.
         </Text>
         <Box className="z-10">
           <Link href="/">
@@ -81,6 +81,9 @@ const NotFound: React.FC = () => {
             </button>
           </Link>
         </Box>
+        <div className="relative inset-x-0 bottom-0 flex items-center justify-center text-md hover:text-gray-100">
+          © {new Date().getFullYear()} Joza Smith. All Rights Reserved.
+        </div>
       </Container>
     </>
   );
