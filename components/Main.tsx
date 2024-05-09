@@ -117,6 +117,14 @@ const AboutMe = () => {
                 <p className="font-bold">2022</p> Built and managing my clothing
                 brand "ADREAMERSFUTURE"
               </span>
+              <span className="flex flex-row gap-3 justified">
+                <p className="font-bold">2023</p> Created my own VSCode themes
+                tracking in 150+ downloads
+              </span>
+              <span className="flex flex-row gap-3 justified">
+                <p className="font-bold">2024</p> Created my own productivity
+                extension for Raycast
+              </span>
             </div>
           </Box>
 
@@ -134,7 +142,7 @@ const AboutMe = () => {
           </Title>
           <div>
             <span className="flex flex-row p-3 indent-3 justified">
-              Art, Music, Playing Games, Building Keyboard, Creating Clothes
+              Art, Music, Playing Games, Building Keyboard, Making Clothes
             </span>
           </div>
         </Box>
