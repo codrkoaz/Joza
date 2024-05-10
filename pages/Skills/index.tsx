@@ -1,6 +1,5 @@
 import React from 'react';
 import KBarCommand from '../../components/KBarCommand';
-import Head from 'next/head';
 import Navbar from '../../components/Navbar';
 import { Container, Group } from '@mantine/core';
 

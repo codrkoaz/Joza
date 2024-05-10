@@ -8,19 +8,17 @@ import { RiLightbulbFill } from 'react-icons/ri';
 import JozaPic from '../public/assets/images/joza.png';
 
 const AboutMe = () => {
-  // const {}
-
   return (
     <Container className="box-border items-center justify-center flex-1 h-screen max-w-xl">
       <div className="flex flex-row pr-2 italic font-bold shrink-0 text-gray-500/80 xs:hidden">
         <p className="flex items-center mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400">
-          <div className='flex'>
+          <div className="flex">
             <RiLightbulbLine
-              className="shrink-0 hover:fill-yellow-300 hover:text-lg"
+              className="shrink-0 fill-white hover:fill-black"
               size={21}
             />
             <RiLightbulbFill
-              className="shrink-0 hover:fill-yellow-300 hover:text-lg"
+              className="absolute shrink-0 fill-gray-100 hover:fill-yellow-300"
               size={21}
             />
           </div>
@@ -83,7 +81,10 @@ const AboutMe = () => {
             <p className="w-full pt-3 text-justify indent-4">
               I am a frontend developer and digital artist based in Grand
               Rapids, with a passion for building and creating enjoyable
-              projects I like. I possess a strong interest in everything from planning, designing to solving coding challenges I face. When I'm offline, I enjoy playing games and designing for my clothing brand.
+              projects I like. I possess a strong interest in everything from
+              planning, designing to solving coding challenges I face. When I'm
+              offline, I enjoy playing games and designing for my clothing
+              brand.
             </p>
           </div>
           <div className="flex justify-center gap-4 pt-2 pb-5 pr-5">
@@ -123,14 +124,14 @@ const AboutMe = () => {
                 <p className="font-bold">2022</p> Built and managing my clothing
                 brand "ADREAMERSFUTURE"
               </span>
-              <span className="flex flex-row gap-3 justified">
+              {/* <span className="flex flex-row gap-3 justified">
                 <p className="font-bold">2023</p> Created my own VSCode themes
                 tracking in 150+ downloads
               </span>
               <span className="flex flex-row gap-3 justified">
                 <p className="font-bold">2024</p> Created my own productivity
                 extension for Raycast
-              </span>
+              </span> */}
             </div>
           </Box>
 

@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const router = useRouter();
   return (
-    <Box>
+    <>
       <Container className="flex items-center max-w-2xl gap-3 pt-3 pl-1 pr-10 backdrop-blur-sm ">
         <div className="flex items-center shrink-0">
           <Logo />
@@ -89,7 +89,7 @@ const Navbar = () => {
           </div>
         </div>
       </Container>
-    </Box>
+    </>
   );
 };
 

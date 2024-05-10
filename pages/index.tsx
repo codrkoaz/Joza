@@ -17,7 +17,6 @@ const Home: NextPage = () => {
             <meta name="description" content="Joza Smith's homepage" />
             <meta name="author" content="Joza Smith" />
             <meta name="author" content="codrkoaz" />
-            <link rel="apple-touch-icon" href="apple-touch-icon.png" />
             <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             <meta property="og:site_name" content="Joza Smith" />
             <meta name="og:title" content="Joza Smith" />
