@@ -6,36 +6,43 @@ import {
   KBarSearch,
   useMatches,
   KBarResults,
-} from "kbar";
+} from 'kbar';
 
 const actions = [
   {
-    id: "home",
-    name: "Home",
-    shortcut: ["H"],
-    keywords: "Home, Home",
-    perform: () => (window.location.pathname = "/"),
+    id: 'home',
+    name: 'Home',
+    shortcut: ['h'],
+    keywords: 'Home, home',
+    perform: () => (window.location.pathname = '/'),
   },
   {
-    id: "work",
-    name: "Work",
-    shortcut: ["w"],
-    keywords: "working, works, Work",
-    perform: () => (window.location.pathname = "Work"),
+    id: 'github',
+    name: 'Github',
+    shortcut: ['g'],
+    keywords: 'github, Github',
+    perform: () => window.open('https://github.com/codrkoaz'),
   },
   {
-    id: "skills",
-    name: "Skills",
-    shortcut: ["s"],
-    keywords: "skills, Skills, skill",
-    perform: () => (window.location.pathname = "Skills"),
+    id: 'work',
+    name: 'Work',
+    shortcut: ['w'],
+    keywords: 'working, works, Work',
+    perform: () => (window.location.pathname = 'Work'),
   },
   {
-    id: "brand",
-    name: "Brand",
-    shortcut: ["brand"],
-    keywords: "brand, Brand",
-    perform: () => window.open("https://adreamersfuture.co", "_blank"),
+    id: 'skills',
+    name: 'Skills',
+    shortcut: ['s'],
+    keywords: 'skills, Skills, skill',
+    perform: () => (window.location.pathname = 'Skills'),
+  },
+  {
+    id: 'brand',
+    name: 'Brand',
+    shortcut: ['b'],
+    keywords: 'brand, Brand',
+    perform: () => window.open('https://adreamersfuture.co', '_blank'),
   },
 ];
 
@@ -46,10 +53,10 @@ const KBarCommand = () => {
       <KBarResults
         items={results}
         onRender={({ item, active }) =>
-          typeof item === "string" ? (
+          typeof item === 'string' ? (
             <div>{item}</div>
           ) : (
-            <div className={`bg-${active ? "gray-400" : "transparent"} h-12 `}>
+            <div className={`bg-${active ? 'gray-400' : 'transparent'} h-12 `}>
               {item.name}
             </div>
           )

@@ -27,7 +27,7 @@ const Navbar = () => {
               className={`p-2 hover:underline flex items-center underline-offset-4 decoration-2
                 ${
                   router.pathname == "/Work"
-                    ? "bg-orange-400 text-zinc-900 underline-offset-4 decoration-2  underline"
+                    ? "bg-orange-400 text-zinc-900 underline-offset-4 decoration-2 underline rounded-sm"
                     : ""
                 }
               `}
@@ -40,7 +40,7 @@ const Navbar = () => {
               className={`p-2 hover:underline underline-offset-4 items-center flex decoration-2
                 ${
                   router.pathname == "/Skills"
-                    ? "text-zinc-900 bg-orange-400 underline-offset-4 decoration-2 underline"
+                    ? "text-zinc-900 bg-orange-400 underline-offset-4 decoration-2 underline rounded-sm"
                     : ""
                 }
               `}

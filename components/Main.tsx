@@ -4,17 +4,26 @@ import Image from 'next/image';
 import Animation from './Animation';
 import { IconChevronRight } from '@tabler/icons';
 import { RiLightbulbLine } from 'react-icons/ri';
+import { RiLightbulbFill } from 'react-icons/ri';
 import JozaPic from '../public/assets/images/joza.png';
 
 const AboutMe = () => {
+  // const {}
+
   return (
     <Container className="box-border items-center justify-center flex-1 h-screen max-w-xl">
       <div className="flex flex-row pr-2 italic font-bold shrink-0 text-gray-500/80 xs:hidden">
         <p className="flex items-center mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400">
-          <RiLightbulbLine
-            className="shrink-0 hover:text-yellow-300 hover:text-lg"
-            size={21}
-          />
+          <div className='flex'>
+            <RiLightbulbLine
+              className="shrink-0 hover:fill-yellow-300 hover:text-lg"
+              size={21}
+            />
+            <RiLightbulbFill
+              className="shrink-0 hover:fill-yellow-300 hover:text-lg"
+              size={21}
+            />
+          </div>
           <span>&nbsp; Tip: Use</span>
           <button className="shrink-0 mx-2 inline bg-white focus:outline-none dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-400 text-gray-600 dark:text-white text-sm leading-5 py-0.5 px-1.5 border border-gray-500 rounded-md">
             <kbd className="font-sans no-underline">⌘ </kbd>
@@ -74,10 +83,7 @@ const AboutMe = () => {
             <p className="w-full pt-3 text-justify indent-4">
               I am a frontend developer and digital artist based in Grand
               Rapids, with a passion for building and creating enjoyable
-              projects I like. I possess a strong interest in everthing from
-              planning and designing to solve coding challenges I face. When I'm
-              offline, I enjoy playing games and designing for my clothing
-              brand.
+              projects I like. I possess a strong interest in everything from planning, designing to solving coding challenges I face. When I'm offline, I enjoy playing games and designing for my clothing brand.
             </p>
           </div>
           <div className="flex justify-center gap-4 pt-2 pb-5 pr-5">
@@ -88,7 +94,7 @@ const AboutMe = () => {
               className="flex items-center justify-center gap-4 pl-3 bg-inherit"
               download
             >
-              <Button className="flex items-center justify-center w-32 bg-orange-300 border-none rounded-lg hover:bg-orange-500 ">
+              <Button className="flex items-center justify-center w-32 bg-orange-400 border-none rounded-lg hover:bg-orange-500 ">
                 Resume
                 <IconChevronRight size={15} />
               </Button>
