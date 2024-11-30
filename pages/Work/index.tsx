@@ -4,7 +4,7 @@ import KBarCommand from '../../components/KBarCommand';
 const Index = () => {
   return (
     <>
-      <head>koazie • work</head>
+      <title>koazie • work</title>
       <KBarCommand />
       <Navbar />
       <div className="flex flex-wrap">

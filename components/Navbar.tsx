@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
         </Group>
 
         <div className="flex items-center justify-end flex-auto gap-3 p-1 break-words">
-          <div className="p-1 border-2 rounded-md cursor-pointer">
+          <div className="p-1 border-2 rounded-md">
             <Switcher />
           </div>
 

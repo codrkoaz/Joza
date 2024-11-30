@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import KBarCommand from '../../components/KBarCommand';
 import Navbar from '../../components/Navbar';
 import { Container, Group } from '@mantine/core';
@@ -7,9 +6,9 @@ import { Container, Group } from '@mantine/core';
 const Skills = () => {
   return (
     <>
-      <head>
-        <title>koazie • skills</title>
-      </head>
+      <title>
+        koazie • skills
+      </title>
       <KBarCommand />
       <Navbar />
       <div className="flex flex-wrap">

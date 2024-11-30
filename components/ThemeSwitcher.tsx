@@ -3,8 +3,8 @@ import {
 	ActionIcon,
 	Box,
 } from '@mantine/core';
-import { ImSun } from 'react-icons/im';
-import { BsMoonStars } from 'react-icons/bs';
+import { IconSun } from '@tabler/icons';
+import { IconMoon } from '@tabler/icons-react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -31,19 +31,19 @@ const ThemeSwitcher = () => {
 				onClick={() => toggleColorScheme()}
 				sx={(theme) => ({
 					backgroundColor:
-						theme.colorScheme === 'light'
-							? theme.colors.dark[9]
-							: theme.colors.gray[7],
-					color:
 						theme.colorScheme === 'dark'
-							? theme.colors.orange[3]
-							: theme.colors.blue[8],
+							? theme.colors.dark[9]
+							: theme.colors.gray[2],
+					color:
+						theme.colorScheme === 'light'
+							? theme.colors.blue[9]
+							: theme.colors.orange[2],
 				})}
 			>
 				{colorScheme === 'dark' ? (
-					<ImSun size={20} className='bg-zinc-900' />
+					<IconSun stroke={2}/>
 				) : (
-					<BsMoonStars size={20} />
+					<IconMoon stroke={2} />
 				)}
 				</ActionIcon>
 			</div>

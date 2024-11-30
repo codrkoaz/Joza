@@ -6,7 +6,6 @@ import { IconChevronRight } from '@tabler/icons';
 import { RiLightbulbLine } from 'react-icons/ri';
 import { RiLightbulbFill } from 'react-icons/ri';
 import JozaPic from '../public/assets/images/joza.png';
-import KBarCommand from './KBarCommand';
 
 const AboutMe = () => {
   return (
