@@ -1,7 +1,7 @@
-import { Box, Container, Group, Menu } from "@mantine/core";
-import Link from "next/link";
-import Switcher from "./ThemeSwitcher";
-import Logo from "./logo";
+import { Container, Group, Menu } from '@mantine/core';
+import Link from 'next/link';
+import Switcher from './ThemeSwitcher';
+import Logo from './logo';
 import {
   IconArrowsLeftRight,
   IconMessageCircle,
@@ -9,10 +9,11 @@ import {
   IconSearch,
   IconSettings,
   IconBrandGithub,
-} from "@tabler/icons";
-import { useRouter } from "next/router";
+  IconDots,
+} from '@tabler/icons';
+import { useRouter } from 'next/router';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const router = useRouter();
   return (
     <>
@@ -26,9 +27,9 @@ const Navbar = () => {
             <a
               className={`p-2 hover:underline flex items-center underline-offset-4 decoration-2
                 ${
-                  router.pathname == "/Work"
-                    ? "bg-orange-400 text-zinc-900 underline-offset-4 decoration-2 underline rounded-sm"
-                    : ""
+                  router.pathname == '/Work'
+                    ? 'bg-orange-400 text-zinc-900 underline-offset-4 decoration-2 underline rounded-sm'
+                    : ''
                 }
               `}
             >
@@ -39,9 +40,9 @@ const Navbar = () => {
             <a
               className={`p-2 hover:underline underline-offset-4 items-center flex decoration-2
                 ${
-                  router.pathname == "/Skills"
-                    ? "text-zinc-900 bg-orange-400 underline-offset-4 decoration-2 underline rounded-sm"
-                    : ""
+                  router.pathname == '/Skills'
+                    ? 'text-zinc-900 bg-orange-400 underline-offset-4 decoration-2 underline rounded-sm'
+                    : ''
                 }
               `}
             >
@@ -63,19 +64,37 @@ const Navbar = () => {
         </Group>
 
         <div className="flex items-center justify-end flex-auto gap-3 p-1 break-words">
-          <div className="p-1 border-2 rounded-md cursor-pointer ">
+          <div className="p-1 border-2 rounded-md cursor-pointer">
             <Switcher />
           </div>
-          <div className="box-border relative justify-center hidden cursor-pointer xs:flex">
-            <Menu trigger="hover" className="p-1 border-2 rounded-md ">
-              <Box className="relative flex flex-col items-center justify-center font-bold ">
-                <div className="flex justify-center w-full hover:bg-gray-500 active:bg-orange-300">
-                  <Link href="/Work">Work</Link>
+
+          <div className="relative hidden cursor-pointer xs:flex">
+            <Menu trigger="hover" openDelay={100}>
+              <Menu.Target>
+                <div className="flex items-center justify-center">
+                  <div className="p-1 font-bold border-2 rounded-md ">
+                    <IconDots stroke={2} />
+                  </div>
                 </div>
-                <div className="flex justify-center w-full hover:bg-gray-500">
-                  <Link href="/Skills">Skills</Link>
-                </div>
-                <div className="flex justify-center w-full hover:bg-gray-500">
+              </Menu.Target>
+              <Menu.Dropdown className="w-full rounded-md">
+                <Menu.Item className="flex justify-center p-2 hover:bg-gray-500 active:bg-orange-400">
+                  <Link
+                    href="/Work"
+                    className="block text-black hover:text-white"
+                  >
+                    Work
+                  </Link>
+                </Menu.Item>
+                <Menu.Item className="flex justify-center p-2 hover:bg-gray-500">
+                  <Link
+                    href="/Skills"
+                    className="block text-black hover:text-white"
+                  >
+                    Skills
+                  </Link>
+                </Menu.Item>
+                <Menu.Item className="flex justify-center p-2 hover:bg-gray-500">
                   <a
                     href="https://www.github.com/codrkoaz"
                     target="_blank"
@@ -83,8 +102,8 @@ const Navbar = () => {
                   >
                     Source
                   </a>
-                </div>
-              </Box>
+                </Menu.Item>
+              </Menu.Dropdown>
             </Menu>
           </div>
         </div>

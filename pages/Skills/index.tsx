@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import KBarCommand from '../../components/KBarCommand';
 import Navbar from '../../components/Navbar';
 import { Container, Group } from '@mantine/core';
@@ -6,7 +7,9 @@ import { Container, Group } from '@mantine/core';
 const Skills = () => {
   return (
     <>
-      <title>koazie • skills</title>
+      <head>
+        <title>koazie • skills</title>
+      </head>
       <KBarCommand />
       <Navbar />
       <div className="flex flex-wrap">
@@ -14,7 +17,7 @@ const Skills = () => {
           Skills
         </h1>
       </div>
-      <Container className="relative flex items-center gap-8 mx-auto inset-1 top-40 sm:flex-wrap">
+      <Container className="relative flex items-center gap-5 mx-auto inset-1 top-40 xs:top-10 xs:flex-wrap">
         <Group className="p-8 box-border flex flex-column items-center justify-evenly h-[50vh] border-2 leading-6 z-2 font-sans relative rounded-lg border-zinc-800 bg-zinc-800/40">
           <h2 className="font-mono text-2xl font-bold">Frontend Developer</h2>
           <div className="absolute flex flex-row items-center justify-center gap-2">

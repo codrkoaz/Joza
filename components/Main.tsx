@@ -6,12 +6,13 @@ import { IconChevronRight } from '@tabler/icons';
 import { RiLightbulbLine } from 'react-icons/ri';
 import { RiLightbulbFill } from 'react-icons/ri';
 import JozaPic from '../public/assets/images/joza.png';
+import KBarCommand from './KBarCommand';
 
 const AboutMe = () => {
   return (
     <Container className="box-border items-center justify-center flex-1 h-screen max-w-xl">
       <div className="flex flex-row pr-2 italic font-bold shrink-0 text-gray-500/80 xs:hidden">
-        <p className="flex items-center mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400">
+        <div className="flex items-center mt-3 mr-20 text-sm text-gray-600 dark:text-gray-400">
           <div className="flex">
             <RiLightbulbLine
               className="shrink-0 fill-white hover:fill-black"
@@ -22,15 +23,15 @@ const AboutMe = () => {
               size={21}
             />
           </div>
-          <span>&nbsp; Tip: Use</span>
+          <p>&nbsp; Tip: Use</p>
           <button className="shrink-0 mx-2 inline bg-white focus:outline-none dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-400 text-gray-600 dark:text-white text-sm leading-5 py-0.5 px-1.5 border border-gray-500 rounded-md">
             <kbd className="font-sans no-underline">⌘ </kbd>
             <kbd className="font-sans">K </kbd>
           </button>
           to quickly navigate the site.
-        </p>
+        </div>
       </div>
-      <div className="h-24"></div>
+      <div className="h-24" />
       <Box
         sx={(theme) => ({
           backgroundColor:

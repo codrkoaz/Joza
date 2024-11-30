@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   KBarProvider,
   KBarPortal,
@@ -8,7 +9,17 @@ import {
   KBarResults,
 } from 'kbar';
 
-const actions = [
+// Type for an action item
+interface Action {
+  id: string;
+  name: string;
+  shortcut: string[];
+  keywords: string;
+  perform: () => void;
+}
+
+// Define the actions array with TypeScript type
+const actions: Action[] = [
   {
     id: 'home',
     name: 'Home',
@@ -28,14 +39,14 @@ const actions = [
     name: 'Work',
     shortcut: ['w'],
     keywords: 'working, works, Work',
-    perform: () => (window.location.pathname = 'Work'),
+    perform: () => (window.location.pathname = '/Work'),
   },
   {
     id: 'skills',
     name: 'Skills',
     shortcut: ['s'],
     keywords: 'skills, Skills, skill',
-    perform: () => (window.location.pathname = 'Skills'),
+    perform: () => (window.location.pathname = '/Skills'),
   },
   {
     id: 'brand',
@@ -46,7 +57,11 @@ const actions = [
   },
 ];
 
-const KBarCommand = () => {
+const KBarCommand: React.FC = () => {
+  const searchRef = React.useRef<HTMLInputElement>(null);
+
+  // Function to focus the search input when clicked
+
   function RenderResults() {
     const { results } = useMatches();
     return (
@@ -56,7 +71,7 @@ const KBarCommand = () => {
           typeof item === 'string' ? (
             <div>{item}</div>
           ) : (
-            <div className={`bg-${active ? 'gray-400' : 'transparent'} h-12 `}>
+            <div className={`bg-${active ? 'gray-400' : 'transparent'} h-10`}>
               {item.name}
             </div>
           )
@@ -68,12 +83,12 @@ const KBarCommand = () => {
   return (
     <KBarProvider actions={actions}>
       <KBarPortal>
-        // Renders the content outside the root node
-        <KBarPositioner className="flex items-center text-lg text-white bg-black/50 ">
-          <KBarAnimator className="flex flex-col justify-center p-2 bg-zinc-900 w-96 rounded-xl">
-            <KBarSearch className="flex w-full h-20 px-4 bg-transparent outline-none" />
+        {/* Renders the content outside the root node */}
+        <KBarPositioner className="fixed flex items-center text-white text-md bg-black/50">
+          <KBarAnimator className="flex flex-col justify-center w-1/2 p-4 bg-zinc-900 rounded-xl">
+            <KBarSearch className="relative flex w-full h-20 px-20 bg-transparent outline-none" />
             <RenderResults />
-            {/* // Search input */}
+            {/* Search input */}
           </KBarAnimator>
         </KBarPositioner>
       </KBarPortal>
